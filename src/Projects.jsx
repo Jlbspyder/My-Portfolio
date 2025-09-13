@@ -14,7 +14,7 @@ const Projects = () => {
     hidden: { opacity: 0, x: -60 },
     show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
-
+  
   const slideInRight = {
     hidden: { opacity: 0, x: 100 }, 
   show: { opacity: 1, x: 0,  transition: { duration: 0.6, ease: "easeOut" } },
@@ -23,7 +23,7 @@ const Projects = () => {
   return (
     <motion.section
       id="projects"
-      variants={slideInRight }
+      variants={slideInLeft}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
