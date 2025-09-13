@@ -1,0 +1,85 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  @apply mx-auto px-4
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.my-pix {
+  aspect-ratio: 1;
+  width: 200px;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.icon {
+  font-size: 20px;
+}
+.skill-box {
+  transform: translateY(0);
+  transition: all 0.5s ease-in;
+}
+.skill-box:hover {
+  transform: translateY(-5%);
+  transition: all 0.5s ease-in;
+}
+.project-img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.menu {
+  transform: translateY(-120%);
+  transition: 0.3s ease-in;
+}
+.menu.active {
+  transform: translateY(0);
+  transition: 0.3s ease-in;
+}
+/* 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+} */
+
+@media (min-width: 650px) {
+  .container {
+  @apply mx-auto px-6
+}
+.menu {
+  display: none;
+}
+}
+ 
+@media (min-width: 1200px) {
+  .container {
+  @apply mx-auto px-10
+}
+}
+
