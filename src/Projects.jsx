@@ -62,7 +62,7 @@ const Projects = () => {
                 <a
                   href={project.demo}
                   target="_blank"
-                  className={`text-sm md:text-[12px] md:h-[30px] md:w-[130px] xl:w-[130px] flex w-[145px] items-center justify-center font-semibold gap-2 bg-blue-50 px-4 py-1 rounded-lg shadow-sm cursor-pointer ${
+                  className={`text-xs md:text-[12px] md:h-[30px] md:w-[130px] xl:w-[130px] flex w-[145px] items-center justify-center font-semibold gap-2 bg-blue-50 px-4 py-1 rounded-lg shadow-sm cursor-pointer ${
                     !project.liveDemo
                       ? "bg-gray-100 text-gray-300 xl:text-[10px] cursor-text"
                       : "hover:bg-blue-100 xl:text-[10px]"
@@ -74,7 +74,7 @@ const Projects = () => {
                 <a
                   href={project.repo}
                   target="_blank"
-                  className={`text-sm md:text-[12px] md:h-[30px] md:w-[130px] xl:w-[130px] flex w-[145px] items-center justify-center  font-semibold gap-2  bg-blue-50 px-4 py-1 rounded-lg shadow-sm cursor-pointer ${
+                  className={`text-xs md:text-[12px] md:h-[30px] md:w-[130px] xl:w-[130px] flex w-[145px] items-center justify-center  font-semibold gap-2  bg-blue-50 px-4 py-1 rounded-lg shadow-sm cursor-pointer ${
                     project.privateCode
                       ? "bg-gray-100 text-gray-300 xl:text-[10px] cursor-text"
                       : "hover:bg-blue-100 xl:text-[10px]"
