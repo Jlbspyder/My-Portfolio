@@ -58,7 +58,7 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <div className="mt-4 px-4 xl:px-3 pb-4 flex justify-between  md:justify-center xl:justify-between  gap-3">
+              <div className="mt-4 xl:px-3 pb-4 flex justify-center xl:justify-between  gap-3">
                 <a
                   href={project.demo}
                   target="_blank"
