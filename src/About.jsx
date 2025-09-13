@@ -44,7 +44,7 @@ const About = () => {
                 href="https://github.com/Jlbspyder"
                 target="_blank"
                 rel="noreferrer"
-                className="border-gray-300 cursor-pointer border-1 rounded-lg flex items-center p-1 gap-2"
+                className="border-gray-300 hover:bg-gray-100 cursor-pointer border-1 rounded-lg flex items-center p-1 gap-2"
               >
                 <FaGithub />
                 <p className="font-semibold">GitHub</p>
@@ -53,7 +53,7 @@ const About = () => {
                 href="https://www.linkedin.com/in/debogbadebo-01476060/"
                 target="_blank"
                 rel="noreferrer"
-                className="border-gray-300 border-1 cursor-pointer rounded-lg flex items-center p-1 gap-2"
+                className="border-gray-300 border-1 hover:bg-gray-100 cursor-pointer rounded-lg flex items-center p-1 gap-2"
               >
                 <FaLinkedin />
                 <p className="font-semibold">LinkedIn</p>

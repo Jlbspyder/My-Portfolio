@@ -19,6 +19,7 @@ It showcases my skills, projects, and experience as a software engineer.
 
 ## 📂 Project Structure
 
+
 src/
 ├── components/ # Reusable UI components
 ├── sections/ # About, Projects, Contact, etc.
@@ -28,6 +29,8 @@ src/
 
 📬 Contact
 
-Portfolio: [your live portfolio link]
+Portfolio: [Gbadebo Debo](https://jlb-24-portfolio.netlify.app/)
 
-GitHub: [https://github.com/Jlbspyder]
+GitHub: [Gbadebo Debo](https://github.com/Jlbspyder)
+
+Email: [Gbadebo Debo](gbadebodebo24@gmail.com)
