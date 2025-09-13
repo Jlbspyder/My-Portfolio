@@ -1,8 +1,10 @@
-import React from "react";
+import {useState} from "react";
 import { IoIosMail } from "react-icons/io";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const [imgError, setImgError] = useState(false);
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -36,8 +38,8 @@ const Hero = () => {
             View My Work
           </a>
           <a
-            href="#contact"
-            className="inline-flex gap-4 items-center px-5 py-3 shadow-sm rounded-md text-[blue] hover:bg-slate-50 hover:border-0"
+            href="mailto:gbadebodebo24@gmail.com"
+            className="inline-flex gap-4 items-center justify-center px-5 py-3 shadow-sm rounded-md text-[blue] hover:bg-slate-50 hover:border-0"
           >
             <IoIosMail className="mt-1 size-5" />
             Contact Me
@@ -45,7 +47,18 @@ const Hero = () => {
         </div>
       </div>
       <div className="mt-10 py-10">
-        <img src="/me.jpg" alt="my-picture" className="my-pix" />
+        {imgError ? (
+          <div className="my-pix relative">
+            <h2 className="absolute top-[50%] translate-y-[-60%] left-[50%] transform translate-x-[-50%] text-7xl font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">GD</h2>
+          </div>
+        ) : (
+          <img
+            src="/me.jpg"
+            alt="my-picture"
+            onError={() => setImgError(true)}
+            className="my-pix"
+          />
+        )}
       </div>
     </motion.section>
   );

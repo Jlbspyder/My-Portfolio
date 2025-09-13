@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
+import { LuGithub } from "react-icons/lu";
 
 const Contact = () => {
       const fadeInUp = {
@@ -26,8 +27,8 @@ const Contact = () => {
 
         <div className="mt-6 inline-flex flex-col sm:flex-row gap-3">
           <a
-            href="mailto:your.email@example.com"
-            className="px-6 py-3 flex items-center gap-5 bg-[rgba(242,242,250,1)] text-[blue] shadow-sm hover:bg-white rounded-md"
+            href="mailto:gbadebodebo24@gmail.com"
+            className="px-6 py-3 flex items-center justify-center gap-5 bg-[rgba(242,242,250,1)] text-[blue] shadow-sm hover:bg-white rounded-md"
           >
             <IoIosMail className="size-5"/>
             Email Me
@@ -35,12 +36,20 @@ const Contact = () => {
           <a
             href="/resume.pdf"
             target="_blank"
-            className="px-6 py-3 flex items-center gap-5 shadow-sm bg-[blue] rounded-md text-white hover:bg-white hover:text-[blue]"
+            className="px-6 py-3 flex items-center justify-center gap-5 shadow-sm bg-[blue] rounded-md text-white hover:bg-white hover:text-[blue]"
           >
             <FaDownload />
             Download Resume
           </a>
         </div>
+      </div>
+      <div className="pt-10 flex justify-center items-center space-x-8">
+        <a href="https://github.com/Jlbspyder" target="_blank" className="px-4 py-2 hover:shadow-sm hover:bg-[rgba(242,242,250,1)] hover:rounded-md">
+          <LuGithub className="text-lg" />
+        </a>
+        <a href="mailto:gbadebodebo24@gmail.com" target="_blank" className="px-4 py-2 hover:shadow-sm hover:bg-[rgba(242,242,250,1)] hover:rounded-md">
+          <IoIosMail className="text-lg" />
+        </a>
       </div>
     </motion.section>
   );

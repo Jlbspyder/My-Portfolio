@@ -89,17 +89,16 @@ const Skills = () => {
       ],
     },
   ];
-
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  const slideInLeft = {
+    hidden: { opacity: 0, x: -60 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
 
   return (
     <motion.section
       id="skills"
-      variants={fadeInUp}
-      initial="hidden" 
+      variants={slideInLeft}
+      initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
       className="py-16 md:py-25 xl:py-15  bg-slate-50"
@@ -107,7 +106,8 @@ const Skills = () => {
       <div className="container">
         <h2 className="text-2xl font-bold text-center">Skills</h2>
         <p className="mt-4 text-center text-xl md:text-[17px]/7 text-slate-700">
-          I utilize a wide range of tools and frameworks to develop robust, scalable solutions.
+          I utilize a wide range of tools and frameworks to develop robust,
+          scalable solutions.
         </p>
         <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
           {skillColumns.map((column) => (
