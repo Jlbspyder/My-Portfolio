@@ -45,10 +45,10 @@ const Contact = () => {
       </div>
       <div className="pt-10 flex justify-center items-center space-x-8">
         <a href="https://github.com/Jlbspyder" target="_blank" className="px-4 py-2 hover:shadow-sm hover:bg-[rgba(242,242,250,1)] hover:rounded-md">
-          <LuGithub className="text-lg" />
+          <LuGithub className="text-2xl" />
         </a>
         <a href="mailto:gbadebodebo24@gmail.com" target="_blank" className="px-4 py-2 hover:shadow-sm hover:bg-[rgba(242,242,250,1)] hover:rounded-md">
-          <IoIosMail className="text-lg" />
+          <IoIosMail className="text-2xl" />
         </a>
       </div>
     </motion.section>

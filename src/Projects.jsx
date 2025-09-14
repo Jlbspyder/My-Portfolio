@@ -1,32 +1,38 @@
-import React from "react";
-import { motion } from "framer-motion";
+import { useEffect} from "react";
+import { motion, useAnimation } from "framer-motion";
 import { LuGithub } from "react-icons/lu";
+import { useInView } from "react-intersection-observer";
 import { VscLiveShare } from "react-icons/vsc";
 import projects from "./data";
 
 const Projects = () => {
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-  };
 
-  const slideInLeft = {
-    hidden: { opacity: 0, x: -60 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
-  };
+  // Controls for the animation
+  const controls = useAnimation();
+
+  // Hook for viewport detection
+  const [ref, inView] = useInView({
+    threshold: 0.1, // Trigger when 10% of section is visible
+    triggerOnce: false, // Animate again if user scrolls away & back
+  });
+
+  // Start animation when section enters the viewport
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, x: 0 });
+    } else {
+      controls.start({ opacity: 0, x: -40 }); // reset when out of view
+    }
+  }, [inView, controls]);
+
   
-  const slideInRight = {
-    hidden: { opacity: 0, x: 100 }, 
-  show: { opacity: 1, x: 0,  transition: { duration: 0.6, ease: "easeOut" } },
-  };
-
   return (
     <motion.section
+      ref={ref}
       id="projects"
-      variants={slideInLeft}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.2 }}
+      animate={controls}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      initial={{ opacity: 0, x: -40 }}
       className="py-18"
     >
       <div className="container">
@@ -42,13 +48,13 @@ const Projects = () => {
                 alt={project.name}
                 className="project-img"
               />
-              <div className="px-6 mt-3">
+              <div className="px-6 xl:px-3 mt-3">
                 <h3 className="text-lg font-semibold text-[blue]">
                   {project.name}
                 </h3>
                 <p className="mt-2 h-[120px] xl:h-[150px] text-slate-600">{project.description}</p>
               </div>
-              <div className="mt-3 px-6 flex flex-wrap gap-2">
+              <div className="mt-3 px-6 xl:px-3 flex flex-wrap gap-2">
                 {project.stack.map((tech) => (
                   <span
                     key={tech}
@@ -58,11 +64,11 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <div className="mt-4 xl:px-3 pb-4 flex justify-center xl:justify-between  gap-3">
+              <div className="mt-4 px-6 xl:px-3 pb-4 flex justify-center xl:justify-between  gap-3">
                 <a
                   href={project.demo}
                   target="_blank"
-                  className={`text-xs md:text-[12px] md:h-[30px] md:w-[130px] xl:w-[130px] flex w-[145px] items-center justify-center font-semibold gap-2 bg-blue-50 px-4 py-1 rounded-lg shadow-sm cursor-pointer ${
+                  className={`text-xs md:text-[12px] h-[30px] flex w-[100%] items-center justify-center font-semibold gap-2 bg-blue-50 px-4 py-1 rounded-lg shadow-sm cursor-pointer ${
                     !project.liveDemo
                       ? "bg-gray-100 text-gray-300 xl:text-[10px] cursor-text"
                       : "hover:bg-blue-100 xl:text-[10px]"
@@ -74,7 +80,7 @@ const Projects = () => {
                 <a
                   href={project.repo}
                   target="_blank"
-                  className={`text-xs md:text-[12px] md:h-[30px] md:w-[130px] xl:w-[130px] flex w-[145px] items-center justify-center  font-semibold gap-2  bg-blue-50 px-4 py-1 rounded-lg shadow-sm cursor-pointer ${
+                  className={`text-xs md:text-[12px] md:h-[30px] flex w-[100%] items-center justify-center  font-semibold gap-2  bg-blue-50 px-4 py-1 rounded-lg shadow-sm cursor-pointer ${
                     project.privateCode
                       ? "bg-gray-100 text-gray-300 xl:text-[10px] cursor-text"
                       : "hover:bg-blue-100 xl:text-[10px]"

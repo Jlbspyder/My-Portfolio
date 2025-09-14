@@ -73,7 +73,7 @@ const About = () => {
                 <div>
                   <FaCode className="icon text-green-500" />
                 </div>
-                <h5 className="font-semibold text-green-500">Clean Code</h5>
+                <h5 className="font-bold text-green-500">Clean Code</h5>
               </div>
               <p className="md:text-[15px]">
                 Developing clean, maintainable, and scalable code by following
@@ -86,7 +86,7 @@ const About = () => {
                 <div>
                   <BsFillLightningChargeFill className="icon text-blue-500" />
                 </div>
-                <h5 className="font-semibold text-blue-500">
+                <h5 className="font-bold text-blue-500">
                   Responsive & Fast
                 </h5>
               </div>
@@ -100,7 +100,7 @@ const About = () => {
                 <div>
                   <FaGlobe className="icon text-purple-500" />
                 </div>
-                <h5 className="font-semibold text-purple-500">
+                <h5 className="font-bold text-purple-500">
                   Modern Solutions
                 </h5>
               </div>
@@ -114,7 +114,7 @@ const About = () => {
                 <div>
                   <SiThealgorithms className="icon text-amber-500" />
                 </div>
-                <h5 className="font-semibold text-amber-500">
+                <h5 className="font-bold text-amber-500">
                   Data structures
                 </h5>
               </div>

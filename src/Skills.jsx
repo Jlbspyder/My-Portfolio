@@ -1,14 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
-import { FaReact, FaGithub, FaNode, FaServer, FaCloud } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
+import { SiTypescript, SiNetlify } from "react-icons/si";
+import { FaReact, FaGithub, FaServer, FaCloud } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { IoLogoVercel } from "react-icons/io5";
-import { SiMongodb } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
-import { IoLogoFirebase } from "react-icons/io5";
-import { TbBrandMysql } from "react-icons/tb";
+import { SiMongodb, SiNextdotjs  } from "react-icons/si";
+import { TbBrandReactNative, TbBrandMysql } from "react-icons/tb";
 
 const Skills = () => {
   const skillColumns = [
@@ -17,11 +14,11 @@ const Skills = () => {
       type: [
         {
           stack: "JavaScript",
-          symbol: <IoLogoJavascript />,
+          icon: <IoLogoJavascript />,
         },
         {
           stack: "TypeScript",
-          symbol: <SiTypescript />,
+          icon: <SiTypescript />,
         },
       ],
     },
@@ -30,23 +27,23 @@ const Skills = () => {
       type: [
         {
           stack: "React",
-          symbol: <FaReact />,
+          icon: <FaReact />,
         },
         {
           stack: "React Native",
-          symbol: <TbBrandReactNative />,
+          icon: <TbBrandReactNative />,
         },
         {
-          stack: "Node.js",
-          symbol: <FaNode />,
+          stack: "Next.js",
+          icon: <SiNextdotjs />,
         },
         {
           stack: "Express",
-          symbol: <FaServer />,
+          icon: <FaServer />,
         },
         {
           stack: "TailwindCSS",
-          symbol: <RiTailwindCssFill />,
+          icon: <RiTailwindCssFill />,
         },
       ],
     },
@@ -55,15 +52,15 @@ const Skills = () => {
       type: [
         {
           stack: "MongoDB",
-          symbol: <SiMongodb />,
+          icon: <SiMongodb />,
         },
         {
           stack: "Firebase",
-          symbol: <IoLogoFirebase />,
+          icon: <IoLogoFirebase />,
         },
         {
           stack: "Mysql",
-          symbol: <TbBrandMysql />,
+          icon: <TbBrandMysql />,
         },
       ],
     },
@@ -72,19 +69,19 @@ const Skills = () => {
       type: [
         {
           stack: "Git",
-          symbol: <FaGithub />,
+          icon: <FaGithub />,
         },
         {
           stack: "Docker",
-          symbol: <FaServer />,
+          icon: <FaServer />,
         },
         {
           stack: "AWS",
-          symbol: <FaCloud />,
+          icon: <FaCloud />,
         },
         {
-          stack: "Vercel",
-          symbol: <IoLogoVercel />,
+          stack: "Netlify",
+          icon: <SiNetlify />,
         },
       ],
     },
@@ -119,7 +116,7 @@ const Skills = () => {
               <ul className="mt-3 md:block flex items-center gap-4 flex-wrap text-slate-600 md:space-y-2">
                 {column.type.map((skill, idx) => (
                   <div className="flex gap-1 md:gap-2 items-center" key={idx}>
-                    <div className="text-blue-500">{skill.symbol}</div>
+                    <div className="text-blue-500">{skill.icon}</div>
                     <p className="font-semibold">{skill.stack}</p>
                   </div>
                 ))}
