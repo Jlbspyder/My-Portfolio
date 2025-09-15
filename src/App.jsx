@@ -12,7 +12,7 @@ import { FaMoon } from "react-icons/fa";
 
 function App() {
   const [active, setActive] = useState("about");
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [openMenu, setOpenMenu] = useState(false);
 
   const navItems = [
