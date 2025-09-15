@@ -7,9 +7,12 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiCloseLargeFill } from "react-icons/ri";
+import { MdSunny } from "react-icons/md";
+import { FaMoon } from "react-icons/fa";
 
 function App() {
   const [active, setActive] = useState("about");
+  const [darkMode, setDarkMode] = useState(true);
   const [openMenu, setOpenMenu] = useState(false);
 
   const navItems = [
@@ -39,6 +42,7 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
+
   useEffect(() => {
     const scrollTop = () => {
       // simple and reliable
@@ -61,14 +65,17 @@ function App() {
     if (openMenu) {
       // lock scroll
       document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
     } else {
       // restore scroll
       document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
     }
 
     // cleanup (runs on unmount)
     return () => {
       document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
     };
   }, [openMenu]);
 
@@ -92,26 +99,38 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen relative flex flex-col">
-      <header className="md:hidden bg-white/80 backdrop-blur sticky top-0 right-0 left-0 z-30 shadow-sm">
-        <div className="container flex items-center justify-between h-[60px] py-4">
-          <div className="font-bold text-xl">Debo</div>
+    <div
+      className={`min-h-screen relative flex flex-col ${
+        darkMode ? "bg-[#0a0a0a]" : "bg-white"
+      }`}
+    >
+      <header
+        className={`md:hidden backdrop-blur fixed top-0 right-0 left-0 z-30 shadow-sm ${
+          darkMode ? "bg-[#262626]" : "bg-white/80"
+        }`}
+      >
+        <div
+          className={`container flex items-center justify-between h-[60px] py-4 ${
+            darkMode ? "header-dark" : ""
+          }`}
+        >
+          <div className={`font-bold text-xl ${darkMode ? "text-white" : ""}`}>Debo</div>
           {!openMenu ? (
             <GiHamburgerMenu
               onClick={() => setOpenMenu(true)}
-              className="text-[30px] md:hidden"
+              className={`text-[30px] md:hidden ${darkMode ? "text-white" : ""}`}
             />
           ) : (
             <RiCloseLargeFill
               onClick={() => setOpenMenu(false)}
-              className="text-[30px] md:hidden"
+              className={`text-[30px] md:hidden ${darkMode ? "text-white" : ""}`}
             />
           )}
           {
             <div
-              className={`bg-white flex flex-col w-full menu fixed top-15 left-0 right-0 h-[100vh] ${
+              className={`flex flex-col w-full menu fixed top-15 left-0 right-0 h-[100vh] ${
                 openMenu ? " active" : ""
-              }`}
+              } ${darkMode ? "bg-[#213547]" : "bg-white"}`}
             >
               {navItems.map((item) => (
                 <nav
@@ -121,40 +140,64 @@ function App() {
                   <a
                     href={`#${item.id}`}
                     onClick={() => scrollToSection(item.id)}
-                    className={`font-semibold hover:text-slate-900 text-lg md:text-[15px] px-3 md:px-0 py-2  ${
-                      active === item.id
+                    className={`font-semibold hover:text-slate-900 text-lg md:text-[15px] px-3 md:px-0 py-2  
+                      ${ active === item.id
                         ? "bg-blue-50 block rounded-sm w-full md:bg-white md:rounded-none md:border-b-2 text-[blue]"
                         : ""
-                    }`}
+                    } 
+                    ${darkMode && active !== item.id ? "text-slate-400" : darkMode && active === item.id ? "text-white bg-slate-600" : ""} `}
                   >
                     {item.label}
                   </a>
                 </nav>
               ))}
+              <div className="mt-2 pl-6">
+                {darkMode ? (
+                  <MdSunny
+                    onClick={() => setDarkMode(false)}
+                    className="text-lg cursor-pointer"
+                    color="yellow"
+                  />
+                ) : (
+                  <FaMoon
+                    onClick={() => setDarkMode(true)}
+                    className="text-lg cursor-pointer"
+                    color="black"
+                  />
+                )}
+              </div>
             </div>
           }
         </div>
       </header>
-      <header className="hidden md:block bg-white/80 backdrop-blur sticky top-0 right-0 left-0 z-30 shadow-sm">
-        <div className="container flex items-center justify-between h-[60px] py-4">
-          <div className="font-bold text-xl">Debo</div>
-          {
+      <header
+        className={`hidden md:block backdrop-blur fixed top-0 right-0 left-0 z-30 shadow-sm ${
+          darkMode ? "bg-[#262626]" : "bg-white/80"
+        }`}
+      >
+        <div className="flex items-center justify-between h-[60px] py-4 px-8">
+          <div className={`font-bold text-xl ${darkMode ? "text-white" : ""}`}>
+            Debo
+          </div>
+          <div className="flex items-center gap-3">
             <div
-              className={`bg-white flex md:w-[45%] md:h-[100%] md:static md:flex md:flex-row md:items-center xl:w-[27%] ${
-                openMenu ? "active" : ""
-              }`}
+              className={
+                "flex md:h-[100%] md:static md:flex md:flex-row md:items-center"
+              }
             >
               {navItems.map((item) => (
                 <nav
                   key={item.id}
-                  className="space-x-4 text-sm p-5 text-slate-600"
+                  className={`space-x-4 text-sm nav-dark p-5 ${
+                    darkMode ? "text-white" : "text-slate-600"
+                  }`}
                 >
                   <a
                     href={`#${item.id}`}
                     onClick={() => scrollToSection(item.id)}
-                    className={`font-semibold hover:text-slate-900 text-lg md:text-[15px] px-3 md:px-0 py-5  ${
+                    className={`font-semibold bg-transparent hover:text-[#ccc] text-lg md:text-[15px] px-3 md:px-0 py-5  ${
                       active === item.id
-                        ? "bg-blue-50 block rounded-sm w-full md:bg-white md:rounded-none md:border-b-2 text-[blue]"
+                        ? "block rounded-sm w-full md:rounded-none md:border-b-2 text-[blue]"
                         : ""
                     }`}
                   >
@@ -163,16 +206,29 @@ function App() {
                 </nav>
               ))}
             </div>
-          }
+            {darkMode ? (
+              <MdSunny
+                onClick={() => setDarkMode(false)}
+                className="text-lg cursor-pointer"
+                color="yellow"
+              />
+            ) : (
+              <FaMoon
+                onClick={() => setDarkMode(true)}
+                className="text-lg cursor-pointer"
+                color="black"
+              />
+            )}
+          </div>
         </div>
       </header>
 
       <main className="flex-grow">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Hero dark={darkMode} setDark={setDarkMode} />
+        <About dark={darkMode} setDark={setDarkMode} />
+        <Skills dark={darkMode} setDark={setDarkMode} />
+        <Projects dark={darkMode} setDark={setDarkMode} />
+        <Contact dark={darkMode} setDark={setDarkMode} />
       </main>
       <Footer />
     </div>

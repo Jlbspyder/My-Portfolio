@@ -33,4 +33,4 @@ Portfolio: [Gbadebo Debo](https://jlb-24-portfolio.netlify.app/)
 
 GitHub: [Gbadebo Debo](https://github.com/Jlbspyder)
 
-Email: [Gbadebo Debo](gbadebodebo24@gmail.com)
+Email: [gbadebodebo24@gmail.com]

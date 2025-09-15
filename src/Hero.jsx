@@ -2,7 +2,7 @@ import {useState} from "react";
 import { IoIosMail } from "react-icons/io";
 import { motion } from "framer-motion";
 
-const Hero = () => {
+const Hero = ({dark}) => {
   const [imgError, setImgError] = useState(false);
 
   const fadeInUp = {
@@ -16,16 +16,16 @@ const Hero = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
-      className="py-15 bg-[rgba(242,242,250,1)]"
+      className={`pb-15 pt-25 transition duration-500 dark ${dark ? "bg-[oklch(14.5% 0 0)]" : "bg-[rgba(242,242,250,1)]"}`}
     >
-      <div className="container text-center">
-        <p className="text-5xl font-semibold md:text-7xl md:w-[95%] mx-auto">
+      <div className={`container text-center ${dark ? "header-dark" : ""}`}>
+        <p className={`text-5xl font-semibold md:text-7xl md:w-[95%] mx-auto ${dark ? "text-white" : ""}`}>
           👋 Hi, I’m{" "}
           <span className="font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Gbadebo Debo
           </span>
         </p>
-        <p className="mt-4 text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto">
+        <p className={`mt-4 text-xl md:text-2xl max-w-2xl mx-auto ${dark ? "text-white" : "text-slate-600"}`}>
           Software Engineer — building scalable, user-centered applications. I
           work across the stack, shipping high-quality, maintainable software.
         </p>
@@ -39,7 +39,7 @@ const Hero = () => {
           </a>
           <a
             href="mailto:gbadebodebo24@gmail.com"
-            className="inline-flex gap-4 items-center justify-center px-5 py-3 shadow-sm rounded-md text-[blue] hover:bg-slate-50 hover:border-0"
+          className={`inline-flex gap-4 items-center justify-center px-5 py-3 shadow-sm rounded-md text-[blue] hover:border-0 ${dark ? "bg-slate-800 text-white hover:bg-gray-700" : ""}`}
           >
             <IoIosMail className="mt-1 size-5" />
             Contact Me

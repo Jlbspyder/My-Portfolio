@@ -13,13 +13,19 @@
 .container {
   @apply mx-auto px-4
 }
+body {
+  overflow-x: hidden;
+}
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .my-pix {
   aspect-ratio: 1;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   margin: auto;
   border-radius: 50%;
   border: 5px solid #fff;
@@ -60,7 +66,7 @@ h1 {
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 670px) {
   .container {
   @apply mx-auto px-6
 }

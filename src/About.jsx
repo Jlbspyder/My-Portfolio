@@ -4,12 +4,11 @@ import { SiThealgorithms } from "react-icons/si";
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { FaCode, FaGlobe, FaGithub, FaLinkedin } from "react-icons/fa";
 
-const About = () => {
+const About = ({dark}) => {
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
-
   const zoomIn = {
     hidden: { opacity: 0, scale: 0.9 },
     show: {
@@ -26,20 +25,20 @@ const About = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
-      className="py-18 md:py-10 xl:py-15"
+      className="py-18 transition duration-500 md:py-10 xl:py-15"
     >
-      <div className="container gap-8 items-center">
+      <div className={`container gap-8 items-center ${dark ? "darkmode" : ""}`}>
         <div className="flex flex-col gap-8 items-center justify-between md:flex-row">
           <div className="md:w-[65%] xl:w-[60%]">
-            <h2 className="text-2xl font-bold">About Me</h2>
-            <p className="mt-4 text-xl md:text-[17px]/7 text-slate-700">
+            <h2 className={`text-2xl font-bold ${dark ? "text-white" : ""}`}>About Me</h2>
+            <p className={`mt-4 text-xl md:text-[17px]/7  ${dark ? "text-white" : "text-slate-700"}`}>
               I am a dedicated Software Engineer experienced in designing,
               developing, and maintaining scalable software solutions. I write
               clean, efficient code and enjoy solving complex problems through
               practical engineering. I work with React, Node.js, databases and
               cloud deployment tools to deliver user-focused results.
             </p>
-            <div className="flex items-center gap-4 mt-4">
+            <div className={`flex items-center gap-4 mt-4 ${dark ? "text-white" : ""}`}>
               <a
                 href="https://github.com/Jlbspyder"
                 target="_blank"
@@ -66,7 +65,7 @@ const About = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
-            className="md:grid gap-4 overflow-hidden grid-cols-2 xl:grid-cols-2 w-[90%] mt-10"
+            className={`md:grid gap-4 overflow-hidden grid-cols-2 xl:grid-cols-2 w-[90%] mt-10 ${dark ? "text-white" : ""}`}
           >
             <div className="md:w-[100%] mx-auto border-gray-200 border-1 p-2 shadow-sm rounded-md mb-8">
               <div className="flex items-center gap-2 mb-4">
