@@ -42,10 +42,8 @@ function App() {
     return () => observer.disconnect();
   }, []);
 
-
   useEffect(() => {
     const scrollTop = () => {
-      // simple and reliable
       window.scrollTo(0, 0);
     };
 
@@ -88,14 +86,13 @@ function App() {
       section.getBoundingClientRect().top + window.scrollY;
     const offsetPosition = elementPosition - headerOffset;
 
-    setOpenMenu(false);
-
     window.scrollTo({
       top: offsetPosition,
       behavior: "smooth",
     });
 
     setActive(id);
+    setOpenMenu(false);
   };
 
   return (
@@ -114,16 +111,22 @@ function App() {
             darkMode ? "header-dark" : ""
           }`}
         >
-          <div className={`font-bold text-xl ${darkMode ? "text-white" : ""}`}>Debo</div>
+          <div className={`font-bold text-xl ${darkMode ? "text-white" : ""}`}>
+            Debo
+          </div>
           {!openMenu ? (
             <GiHamburgerMenu
               onClick={() => setOpenMenu(true)}
-              className={`text-[30px] md:hidden ${darkMode ? "text-white" : ""}`}
+              className={`text-[30px] md:hidden ${
+                darkMode ? "text-white" : ""
+              }`}
             />
           ) : (
             <RiCloseLargeFill
               onClick={() => setOpenMenu(false)}
-              className={`text-[30px] md:hidden ${darkMode ? "text-white" : ""}`}
+              className={`text-[30px] md:hidden ${
+                darkMode ? "text-white" : ""
+              }`}
             />
           )}
           {
@@ -140,12 +143,19 @@ function App() {
                   <a
                     href={`#${item.id}`}
                     onClick={() => scrollToSection(item.id)}
-                    className={`font-semibold hover:text-slate-900 text-lg md:text-[15px] px-3 md:px-0 py-2  
-                      ${ active === item.id
-                        ? "bg-blue-50 block rounded-sm w-full md:bg-white md:rounded-none md:border-b-2 text-[blue]"
+                    className={`font-semibold w-full block hover:text-slate-900 text-lg md:text-[15px] px-3 md:px-0 py-2  
+                      ${
+                        active === item.id
+                          ? "bg-blue-50 block rounded-sm w-full md:bg-white md:rounded-none md:border-b-2 text-[blue]"
+                          : ""
+                      } 
+                    ${
+                      darkMode && active !== item.id
+                        ? "text-slate-400"
+                        : darkMode && active === item.id
+                        ? "text-white bg-slate-600"
                         : ""
-                    } 
-                    ${darkMode && active !== item.id ? "text-slate-400" : darkMode && active === item.id ? "text-white bg-slate-600" : ""} `}
+                    } `}
                   >
                     {item.label}
                   </a>

@@ -34,13 +34,21 @@ const Projects = ({ dark }) => {
       className="py-18 transition duration-500"
     >
       <div className={`container ${dark ? "bg-[#121212]" : ""}`}>
-        <h2 className={`text-2xl font-bold text-center ${dark ? "text-white" : ""}`}>Projects</h2>
+        <h2
+          className={`text-2xl font-bold text-center ${
+            dark ? "text-white" : ""
+          }`}
+        >
+          Projects
+        </h2>
         <div className="mt-6 grid md:grid-cols-2 xl:grid-cols-4 gap-6">
           {projects.map((project) => (
             <article
               key={project.id}
-              className={`rounded-lg skill-box border-gray-300 border-1 shadow-sm ${
-                dark ? "bg-[#121212]" : "bg-white"
+              className={`rounded-lg skill-box border-1 shadow-sm ${
+                dark
+                  ? "bg-[#121212] border-gray-600"
+                  : "bg-white border-gray-300"
               }`}
             >
               <img
@@ -50,8 +58,8 @@ const Projects = ({ dark }) => {
               />
               <div className="px-6 xl:px-3 mt-3">
                 <h3
-                  className={`text-lg font-semibold ${
-                    dark ? "text-white" : "text-[blue]"
+                  className={`font-semibold ${
+                    dark ? "text-white text-2xl md:text-xl" : "text-[blue] text-2xl md:text-xl"
                   }`}
                 >
                   {project.name}
@@ -70,7 +78,7 @@ const Projects = ({ dark }) => {
                     key={tech}
                     className={`text-xs xl:text-[10px] px-2 py-1 shadow-sm rounded-lg   ${
                       dark
-                        ? "bg-slate-900 text-slate-200"
+                        ? "bg-slate-900 text-slate-400"
                         : "bg-blue-50 text-slate-700"
                     }`}
                   >

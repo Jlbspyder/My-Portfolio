@@ -66,7 +66,7 @@ h1 {
   }
 }
 
-@media (min-width: 670px) {
+@media (min-width: 750px) {
   .container {
   @apply mx-auto px-6
 }
