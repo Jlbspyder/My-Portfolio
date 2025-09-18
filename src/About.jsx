@@ -53,7 +53,11 @@ const About = ({ dark }) => {
                 href="https://github.com/Jlbspyder"
                 target="_blank"
                 rel="noreferrer"
-                className="border-gray-300 hover:bg-gray-100 cursor-pointer border-1 rounded-lg flex items-center p-1 gap-2"
+                className={` cursor-pointer border-1 rounded-lg flex items-center p-1 gap-2 ${
+                  dark
+                    ? "border-gray-800 hover:bg-gray-900"
+                    : "border-gray-200 hover:bg-gray-100"
+                }`}
               >
                 <FaGithub />
                 <p className="font-semibold">GitHub</p>
@@ -62,7 +66,11 @@ const About = ({ dark }) => {
                 href="https://www.linkedin.com/in/debogbadebo-01476060/"
                 target="_blank"
                 rel="noreferrer"
-                className="border-gray-300 border-1 hover:bg-gray-100 cursor-pointer rounded-lg flex items-center p-1 gap-2"
+                className={` cursor-pointer border-1 rounded-lg flex items-center p-1 gap-2 ${
+                  dark
+                    ? "border-gray-800 hover:bg-gray-900"
+                    : "border-gray-200 hover:bg-gray-100"
+                }`}
               >
                 <FaLinkedin />
                 <p className="font-semibold">LinkedIn</p>
@@ -81,7 +89,7 @@ const About = ({ dark }) => {
           >
             <div
               className={`md:w-[100%] mx-auto border-1 p-2 shadow-sm rounded-md mb-8 ${
-                dark ? "border-gray-600" : "border-gray-200"
+                dark ? "border-gray-800" : "border-gray-200"
               }`}
             >
               <div className="flex items-center gap-2 mb-4">
@@ -98,7 +106,7 @@ const About = ({ dark }) => {
             </div>
             <div
               className={`md:w-[100%] mx-auto border-1 p-2 shadow-sm rounded-md mb-8 ${
-                dark ? "border-gray-600" : "border-gray-200"
+                dark ? "border-gray-800" : "border-gray-200"
               }`}
             >
               <div className="flex items-center gap-2 mb-4">
@@ -114,7 +122,7 @@ const About = ({ dark }) => {
             </div>
             <div
               className={`md:w-[100%] mx-auto border-1 p-2 shadow-sm rounded-md mb-8 ${
-                dark ? "border-gray-600" : "border-gray-200"
+                dark ? "border-gray-800" : "border-gray-200"
               }`}
             >
               <div className="flex items-center gap-2 mb-4">
@@ -130,7 +138,7 @@ const About = ({ dark }) => {
             </div>
             <div
               className={`md:w-[100%] mx-auto border-1 p-2 shadow-sm rounded-md mb-8 ${
-                dark ? "border-gray-600" : "border-gray-200"
+                dark ? "border-gray-800" : "border-gray-200"
               }`}
             >
               <div className="flex items-center gap-2 mb-4">

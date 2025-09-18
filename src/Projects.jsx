@@ -47,8 +47,8 @@ const Projects = ({ dark }) => {
               key={project.id}
               className={`rounded-lg skill-box border-1 shadow-sm ${
                 dark
-                  ? "bg-[#121212] border-gray-600"
-                  : "bg-white border-gray-300"
+                  ? "bg-[#121212] border-gray-800"
+                  : "bg-white border-gray-200"
               }`}
             >
               <img
@@ -59,7 +59,9 @@ const Projects = ({ dark }) => {
               <div className="px-6 xl:px-3 mt-3">
                 <h3
                   className={`font-semibold ${
-                    dark ? "text-white text-2xl md:text-xl" : "text-[blue] text-2xl md:text-xl"
+                    dark
+                      ? "text-white text-2xl md:text-xl"
+                      : "text-[blue] text-2xl md:text-xl"
                   }`}
                 >
                   {project.name}

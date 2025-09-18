@@ -12,7 +12,9 @@ import { FaMoon } from "react-icons/fa";
 
 function App() {
   const [active, setActive] = useState("about");
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("mode") === "false"
+  );
   const [openMenu, setOpenMenu] = useState(false);
 
   const navItems = [
@@ -21,6 +23,16 @@ function App() {
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
   ];
+
+  const handleMode = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    localStorage.setItem("mode", newMode);
+  };
+
+  useEffect(() => {
+    setDarkMode(localStorage.getItem("mode") === "true" ? true : false);
+  }, [darkMode]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -103,7 +115,7 @@ function App() {
     >
       <header
         className={`md:hidden backdrop-blur fixed top-0 right-0 left-0 z-30 shadow-sm ${
-          darkMode ? "bg-[#262626]" : "bg-white/80"
+          darkMode ? "bg-[#213547]" : "bg-white/80"
         }`}
       >
         <div
@@ -131,7 +143,7 @@ function App() {
           )}
           {
             <div
-              className={`flex flex-col w-full menu fixed top-15 left-0 right-0 h-[100vh] ${
+              className={`flex flex-col w-full menu fixed top-14.5 left-0 right-0 h-[100vh] ${
                 openMenu ? " active" : ""
               } ${darkMode ? "bg-[#213547]" : "bg-white"}`}
             >
@@ -164,13 +176,13 @@ function App() {
               <div className="mt-2 pl-6">
                 {darkMode ? (
                   <MdSunny
-                    onClick={() => setDarkMode(false)}
+                    onClick={handleMode}
                     className="text-lg cursor-pointer"
                     color="yellow"
                   />
                 ) : (
                   <FaMoon
-                    onClick={() => setDarkMode(true)}
+                    onClick={handleMode}
                     className="text-lg cursor-pointer"
                     color="black"
                   />
@@ -218,13 +230,13 @@ function App() {
             </div>
             {darkMode ? (
               <MdSunny
-                onClick={() => setDarkMode(false)}
+                onClick={handleMode}
                 className="text-lg cursor-pointer"
                 color="yellow"
               />
             ) : (
               <FaMoon
-                onClick={() => setDarkMode(true)}
+                onClick={handleMode}
                 className="text-lg cursor-pointer"
                 color="black"
               />
@@ -234,11 +246,11 @@ function App() {
       </header>
 
       <main className="flex-grow">
-        <Hero dark={darkMode} setDark={setDarkMode} />
-        <About dark={darkMode} setDark={setDarkMode} />
-        <Skills dark={darkMode} setDark={setDarkMode} />
-        <Projects dark={darkMode} setDark={setDarkMode} />
-        <Contact dark={darkMode} setDark={setDarkMode} />
+        <Hero dark={darkMode} />
+        <About dark={darkMode} />
+        <Skills dark={darkMode} />
+        <Projects dark={darkMode} />
+        <Contact dark={darkMode} />
       </main>
       <Footer />
     </div>
