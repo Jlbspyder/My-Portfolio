@@ -29,8 +29,10 @@ src/
 
 📬 Contact
 
-Portfolio: [Gbadebo Debo](https://jlb-24-portfolio.netlify.app/)
+Portfolio: https://jlb-24-portfolio.netlify.app/
 
 GitHub: [Gbadebo Debo](https://github.com/Jlbspyder)
 
-Email: [gbadebodebo24@gmail.com]
+LinkedIn: [Gbadebo Debo](https://www.linkedin.com/in/debo-gbadebo-01476060/)
+
+Email: gbadebodebo24@gmail.com
