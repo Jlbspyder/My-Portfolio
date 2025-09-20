@@ -63,7 +63,7 @@ const About = ({ dark }) => {
                 <p className="font-semibold">GitHub</p>
               </a>
               <a
-                href="https://www.linkedin.com/in/debogbadebo-01476060/"
+                href="https://www.linkedin.com/in/debo-gbadebo-01476060/"
                 target="_blank"
                 rel="noreferrer"
                 className={` cursor-pointer border-1 rounded-lg flex items-center p-1 gap-2 ${
