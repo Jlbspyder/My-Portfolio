@@ -62,7 +62,7 @@ const Contact = ({ dark }) => {
           <FaGithub className="text-2xl" />
         </a>
         <a
-          href="https://www.linkedin.com/in/debogbadebo-01476060/"
+          href="https://www.linkedin.com/in/debo-gbadebo-01476060/"
           target="_blank"
           className={`px-4 py-2 hover:shadow-sm hover:rounded-md cursor-pointer ${
             dark ? "hover:bg-black" : "hover:bg-[rgba(242,242,250,1)]"
