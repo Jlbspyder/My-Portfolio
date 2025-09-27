@@ -115,7 +115,7 @@ function App() {
     >
       <header
         className={`md:hidden backdrop-blur fixed top-0 right-0 left-0 z-30 shadow-sm ${
-          darkMode ? "bg-[#213547]" : "bg-white/80"
+          darkMode ? "bg-[#1f1f1f]" : "bg-white/80"
         }`}
       >
         <div
@@ -194,7 +194,7 @@ function App() {
       </header>
       <header
         className={`hidden md:block backdrop-blur fixed top-0 right-0 left-0 z-30 shadow-sm ${
-          darkMode ? "bg-[#262626]" : "bg-white/80"
+          darkMode ? "bg-[#1f1f1f]" : "bg-white/80"
         }`}
       >
         <div className="flex items-center justify-between h-[60px] py-4 px-8">
@@ -219,9 +219,9 @@ function App() {
                     onClick={() => scrollToSection(item.id)}
                     className={`font-semibold bg-transparent hover:text-[#ccc] text-lg md:text-[15px] px-3 md:px-0 py-5  ${
                       active === item.id
-                        ? "block rounded-sm w-full md:rounded-none md:border-b-2 text-[blue]"
+                        ? "block rounded-sm w-full md:rounded-none md:border-b-2 md: text-[blue]"
                         : ""
-                    }`}
+                    } ${!darkMode && active === item.id ? "text-[blue]" : !darkMode && active !== item.id ? "text-slate-600" : darkMode && active === item.id ? "text-white" : "bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"}`}
                   >
                     {item.label}
                   </a>

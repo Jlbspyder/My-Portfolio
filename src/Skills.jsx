@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { SiTypescript, SiNetlify } from "react-icons/si";
-import { FaReact, FaGithub, FaServer, FaCloud } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaServer, FaCloud } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb, SiNextdotjs } from "react-icons/si";
 import { TbBrandReactNative, TbBrandMysql } from "react-icons/tb";
@@ -69,7 +69,7 @@ const Skills = ({ dark }) => {
       type: [
         {
           stack: "Git",
-          icon: <FaGithub />,
+          icon: <FaGitAlt />,
         },
         {
           stack: "Docker",
