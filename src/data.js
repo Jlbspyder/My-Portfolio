@@ -12,12 +12,12 @@ const projects = [
   },
   {
     id: 2,
-    name: "E-commorce Platform",
+    name: "Dessert Shop",
     image:  "/ecommerce.jpg",
     liveDemo: true,
     privateCode: false,
-    description: "Full-stack e-commerce website built with React, Node.js and MongoDB.",
-    stack: ["React", "MongoDB", "Express", "PayPal"],
+    description: "A production-grade dessert shopping web app with secure authentication, PayPal integration, and an admin CMS dashboard for managing desserts. Includes CRUD functionality, search and filter, pagination, and image uploads.",
+    stack: ["React", "Node.js", "MongoDB", "Express", "PayPal", "JWT"],
     demo: " https://dessert-shop.onrender.com/",
     repo: "https://github.com/Jlbspyder/Desserts-shop"
   },
