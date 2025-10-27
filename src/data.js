@@ -16,7 +16,7 @@ const projects = [
     image:  "/ecommerce.jpg",
     liveDemo: true,
     privateCode: false,
-    description: "A production-grade dessert shopping web app with secure authentication, PayPal integration, and an admin CMS dashboard for managing desserts. Includes CRUD functionality, search and filter, pagination, and image uploads.",
+    description: "A production-grade dessert shopping web app with secure authentication, PayPal integration, and an admin CMS dashboard for managing desserts.",
     stack: ["React", "Node.js", "MongoDB", "Express", "PayPal", "JWT"],
     demo: " https://dessert-shop.onrender.com/",
     repo: "https://github.com/Jlbspyder/Desserts-shop"
