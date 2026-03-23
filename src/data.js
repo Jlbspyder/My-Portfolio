@@ -35,7 +35,7 @@ const projects = [
   {
     id: 4,
     name: "Typing Speed Test",
-    image:  "/desktop-not-started.jpg",
+    image:  "/speed.jpg",
     liveDemo: true,
     privateCode: true,
     description: "Test your typing speed and accuracy.",
