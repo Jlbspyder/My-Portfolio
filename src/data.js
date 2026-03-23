@@ -34,14 +34,14 @@ const projects = [
   },
   {
     id: 4,
-    name: "Budget Planner",
-    image:  "/budget.jpg",
+    name: "Typing Speed Test",
+    image:  "/speed.jpg",
     liveDemo: true,
     privateCode: true,
-    description: "Take Control of Your Money. Easily track your income, expenses, and savings goals in one place.",
-    stack: ["React", "Redux", "Firebase", "JWT"],
-    demo: "https://jlb-budget-planner.netlify.app/",
-    repo: "https://github.com/Jlbspyder/Budget-Planner"
+    description: "Test your typing speed and accuracy.",
+    stack: ["React", "TailwindCSS", "Firebase"],
+    demo: "https://jlb-typing.netlify.app/",
+    repo: "https://github.com/Jlbspyder/Speed-Test"
   },
 ];
 
