@@ -5,7 +5,7 @@ const projects = [
     image:  "/car-copy.jpg",
     liveDemo: true,
     privateCode: false,
-    description: "Responsive app to explore cars by model, color, and specs, built with React and Tailwind CSS",
+    description: "A responsive clone of the Kia website built to replicate a modern automotive brand experience with clean UI design, and interactive user interfaces. The project focuses on responsive layouts, performance optimization, and pixel-accurate implementation of key sections such as vehicle showcases.",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     demo: "https://car-configurator-clone.netlify.app/",
     repo: "https://github.com/Jlbspyder/Car-Configurator"
@@ -16,7 +16,7 @@ const projects = [
     image:  "/ecommerce.jpg",
     liveDemo: true,
     privateCode: false,
-    description: "A production-grade dessert shopping web app with secure authentication, PayPal integration, and an admin CMS dashboard for managing desserts.",
+    description: "A production grade dessert shopping web app with full cart functionality, secure authentication, PayPal integration, and an admin CMS dashboard for managing desserts.",
     stack: ["React", "Node.js", "Express", "PayPal"],
     demo: " https://dessert-shop.onrender.com/",
     repo: "https://github.com/Jlbspyder/Desserts-shop"
@@ -27,8 +27,8 @@ const projects = [
     image:  "/ecommerce-2.jpg",
     liveDemo: false,
     privateCode: true,
-    description: "Mobile HR management app for Emerald Energy Resources, built with React Native and Typescript, available on PlayStore & AppStore.",
-    stack: ["React", "Redux ToolKit", "Mongoose"],
+    description: " A full-stack ERP application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system. Developed with a focus on scalable architecture, and responsive user experience. Available on PlayStore & AppStore.",
+    stack: ["React", "React Native", "TypeScript", "Redux ToolKit", "Mongoose"],
     demo: "#",
     repo: "#"
   },
@@ -38,7 +38,7 @@ const projects = [
     image:  "/speed-test.jpg",
     liveDemo: true,
     privateCode: true,
-    description: "Test your typing speed and accuracy.",
+    description: " A modern typing speed test application built to measure typing accuracy, speed, and real-time performance. The application provides an interactive typing experience with live WPM calculation, accuracy tracking, mistake highlighting, timer-based testing, and responsive UI feedback. ",
     stack: ["React", "TailwindCSS", "Firebase"],
     demo: "https://jlb-typing.netlify.app/",
     repo: "https://github.com/Jlbspyder/Speed-Test"
