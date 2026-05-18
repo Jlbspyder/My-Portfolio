@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "Dessert Shop",
+    name: "E-Commerce Platform",
     image:  "/ecommerce.jpg",
     liveDemo: true,
     privateCode: false,
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "Mobile App",
+    name: "Enterprise Resource Planning (ERP) App",
     image:  "/ecommerce-2.jpg",
     liveDemo: false,
     privateCode: true,
