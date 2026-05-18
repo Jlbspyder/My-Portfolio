@@ -5,7 +5,7 @@ const projects = [
     image:  "/car-copy.jpg",
     liveDemo: true,
     privateCode: false,
-    description: "A responsive clone of the Kia website built to replicate a modern automotive brand experience with clean UI design, and interactive user interfaces. The project focuses on responsive layouts, performance optimization, and pixel-accurate implementation of key sections such as vehicle showcases.",
+    description: "A responsive clone of the Kia website built to replicate a modern automotive brand experience with clean UI design, responsive layouts, and interactive user interfaces.",
     stack: ["React", "Node.js", "Express", "MongoDB"],
     demo: "https://car-configurator-clone.netlify.app/",
     repo: "https://github.com/Jlbspyder/Car-Configurator"
