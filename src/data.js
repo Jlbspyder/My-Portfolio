@@ -27,7 +27,7 @@ const projects = [
     image:  "/ecommerce-2.jpg",
     liveDemo: false,
     privateCode: true,
-    description: " A full-stack ERP application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system. Developed with a focus on scalable architecture, and responsive user experience. Available on PlayStore & AppStore.",
+    description: " A full-stack ERP application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system.",
     stack: ["React", "React Native", "TypeScript", "Redux ToolKit", "Mongoose"],
     demo: "#",
     repo: "#"
@@ -38,7 +38,7 @@ const projects = [
     image:  "/speed-test.jpg",
     liveDemo: true,
     privateCode: true,
-    description: " A modern typing speed test application built to measure typing accuracy, speed, and real-time performance. The application provides an interactive typing experience with live WPM calculation, accuracy tracking, mistake highlighting, timer-based testing, and responsive UI feedback. ",
+    description: " A modern typing speed test application built to measure typing accuracy, speed, and WPM. It features mistake highlights and time based testing.",
     stack: ["React", "TailwindCSS", "Firebase"],
     demo: "https://jlb-typing.netlify.app/",
     repo: "https://github.com/Jlbspyder/Speed-Test"
