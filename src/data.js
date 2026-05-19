@@ -5,10 +5,10 @@ const projects = [
     image:  "/ecommerce-2.jpg",
     liveDemo: false,
     privateCode: true,
-    description: " A web and mobile ERP app for Emerald Energy Resources, built to manage business operations, employee workflows, approvals, and role based access control through a centralized system.",
+    description: " A modern ERP application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system.",
     stack: ["React", "React Native", "TypeScript", "Mongoose", "Redux ToolKit"],
-    demo: "#",
-    repo: "#"
+    demo: "jlb-rbac-erp.netlify.app",
+    repo: "https://github.com/Jlbspyder/ERP_APP"
   },
   {
     id: 2,
