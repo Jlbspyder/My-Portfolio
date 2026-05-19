@@ -7,7 +7,7 @@ const projects = [
     privateCode: false,
     description: " A modern ERP application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system.",
     stack: ["React", "React Native", "TypeScript", "Mongoose", "Redux ToolKit"],
-    demo: "jlb-rbac-erp.netlify.app",
+    demo: "https://jlb-rbac-erp.netlify.app",
     repo: "https://github.com/Jlbspyder/ERP_APP"
   },
   {
