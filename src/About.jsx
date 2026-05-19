@@ -38,11 +38,13 @@ const About = ({ dark }) => {
                 dark ? "text-white" : "text-slate-700"
               }`}
             >
-              I am a dedicated Software Engineer experienced in designing,
-              developing, and maintaining scalable software solutions. I write
-              clean, efficient code and enjoy solving complex problems through
-              practical engineering. I work with React, Node.js, databases and
-              cloud deployment tools to deliver user-focused results.
+              I am a dedicated Software Engineer with experience developing,
+              and maintaining scalable software solutions. I specialize in building clean,
+              efficient, and user focused applications while solving complex engineering
+              problems through practical and maintainable solutions. My technical stack
+              includes React, Node.js, databases, and cloud deployment technologies,
+              enabling me to deliver modern fullstack applications with strong
+              performance and usability.
             </p>
             <div
               className={`flex items-center gap-4 mt-4 ${
