@@ -101,9 +101,10 @@ const About = ({ dark }) => {
                 <h5 className="font-bold text-green-500">Clean Code</h5>
               </div>
               <p className="md:text-[15px]">
-                Developing clean, maintainable, and scalable code by following
-                best practices such as DRY, clear naming, version control, and
-                the Atomic Design methodology for reusable components.
+                Developing clean, scalable, and maintainable software by applying
+                engineering best practices, including DRY principles, clear code
+                structure, version control, and Atomic Design for reusable
+                component architecture.
               </p>
             </div>
             <div
@@ -118,8 +119,9 @@ const About = ({ dark }) => {
                 <h5 className="font-bold text-blue-500">Responsive & Fast</h5>
               </div>
               <p className="md:text-[15px]">
-                Delivering solutions quickly and responsively, consistently
-                meeting deadlines while adapting to changing requirements.
+                Delivering efficient, high quality solutions in fast paced
+                environments while consistently meeting deadlines and adapting
+                to evolving requirements.
               </p>
             </div>
             <div
@@ -150,8 +152,9 @@ const About = ({ dark }) => {
                 <h5 className="font-bold text-amber-500">Data structures</h5>
               </div>
               <p className="md:text-[15px]">
-                Proficient in applying algorithms and data structures to
-                problem-solving.
+                Strong understanding of algorithms and data structures,
+                with the ability to apply them effectively to problem solving
+                and software development.
               </p>
             </div>
           </motion.div>
