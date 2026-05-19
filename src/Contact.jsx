@@ -42,7 +42,7 @@ const Contact = ({ dark }) => {
             Email Me
           </a>
           <a
-            href="/resume.pdf"
+            href="/GBADEBO_DEBO_CV.pdf"
             target="_blank"
             className="px-6 py-3 flex items-center justify-center gap-5 shadow-sm bg-[blue] rounded-md text-white hover:bg-white hover:text-[blue]"
           >
