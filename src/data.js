@@ -1,11 +1,11 @@
 const projects = [
    {
     id: 1,
-    name: "Enterprise Resource Planning (ERP) App",
+    name: "ERP App",
     image:  "/ecommerce-2.jpg",
     liveDemo: true,
     privateCode: true,
-    description: " A modern ERP application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system.",
+    description: " A modern enterprise resource planning application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system.",
     stack: ["React", "React Native", "TypeScript", "Mongoose", "Redux ToolKit"],
     demo: "https://jlb-rbac-erp.netlify.app",
     repo: "https://github.com/Jlbspyder/ERP_APP"
