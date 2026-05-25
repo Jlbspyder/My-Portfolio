@@ -17,7 +17,7 @@ const projects = [
     liveDemo: true,
     privateCode: false,
     description: "A production grade dessert shopping web app with full cart functionalities, PayPal integration, secure authentication, and an admin CMS dashboard for managing desserts.",
-    stack: ["React", "Node.js", "Express", "PayPal"],
+    stack: ["React", "Redux Toolkit", "Node.js", "Express", "PayPal", "JWT"],
     demo: " https://dessert-shop.onrender.com/",
     repo: "https://github.com/Jlbspyder/Desserts-shop"
   },
