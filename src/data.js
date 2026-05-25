@@ -38,7 +38,7 @@ const projects = [
     image:  "/rss-feed.png",
     liveDemo: true,
     privateCode: false,
-    description: " A customizable content aggregator that pulls RSS and Atom feeds into one well-designed reading dashboard. It is a full-stack RSS feed reader designed to provide a clean, distraction-free way to consume content from multiple sources in one place. ",
+    description: " A full-stack customizable content aggregator that pulls RSS and Atom feeds into one well-designed reading dashboard. ",
     stack: ["React", "Express", "Neon", "Prisma", "JWT", "TailwindCSS"],
     demo: "https://jlb-rssfeed.netlify.app/",
     repo: "https://github.com/Jlbspyder/RSS-FEED"
