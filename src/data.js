@@ -21,19 +21,8 @@ const projects = [
     demo: " https://dessert-shop.onrender.com/",
     repo: "https://github.com/Jlbspyder/Desserts-shop"
   },
-   {
+    {
     id: 3,
-    name: "Car Showcase Web App",
-    image:  "/car-copy.jpg",
-    liveDemo: true,
-    privateCode: true,
-    description: "A responsive clone of the Kia website built to replicate a modern automotive brand experience with clean UI design, responsive layouts, and interactive user interfaces.",
-    stack: ["React", "Node.js", "Express", "MongoDB", "Redux Toolkit"],
-    demo: "https://car-configurator-clone.netlify.app/",
-    repo: "https://github.com/Jlbspyder/Car-Configurator"
-  },
-  {
-    id: 4,
     name: "RSS Feed Aggregator",
     image:  "/rss-feed.png",
     liveDemo: true,
@@ -42,6 +31,17 @@ const projects = [
     stack: ["React", "Express", "Neon", "Prisma", "JWT", "TailwindCSS"],
     demo: "https://jlb-rssfeed.netlify.app/",
     repo: "https://github.com/Jlbspyder/RSS-FEED"
+  },
+   {
+    id: 4,
+    name: "Car Showcase Web App",
+    image:  "/car-copy.jpg",
+    liveDemo: true,
+    privateCode: true,
+    description: "A responsive clone of the Kia website built to replicate a modern automotive brand experience with clean UI design, responsive layouts, and interactive user interfaces.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Redux Toolkit"],
+    demo: "https://car-configurator-clone.netlify.app/",
+    repo: "https://github.com/Jlbspyder/Car-Configurator"
   },
 ];
 
