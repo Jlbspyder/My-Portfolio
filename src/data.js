@@ -4,7 +4,7 @@ const projects = [
     name: "Enterprise Resource Planning (ERP) App",
     image:  "/ecommerce-2.jpg",
     liveDemo: true,
-    privateCode: false,
+    privateCode: true,
     description: " A modern ERP application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system.",
     stack: ["React", "React Native", "TypeScript", "Mongoose", "Redux ToolKit"],
     demo: "https://jlb-rbac-erp.netlify.app",
@@ -28,20 +28,20 @@ const projects = [
     liveDemo: true,
     privateCode: true,
     description: "A responsive clone of the Kia website built to replicate a modern automotive brand experience with clean UI design, responsive layouts, and interactive user interfaces.",
-    stack: ["React", "Node.js", "Express", "MongoDB"],
+    stack: ["React", "Node.js", "Express", "MongoDB", "Redux Toolkit"],
     demo: "https://car-configurator-clone.netlify.app/",
     repo: "https://github.com/Jlbspyder/Car-Configurator"
   },
   {
     id: 4,
-    name: "Typing Speed Test",
-    image:  "/speed-test.jpg",
+    name: "RSS Feed Aggregator",
+    image:  "/rss-feed.png",
     liveDemo: true,
     privateCode: false,
-    description: " A modern typing speed test application built to measure typing accuracy, speed, and WPM. It features mistake highlights and time based testing, and responsive UI feedack.",
-    stack: ["React", "TailwindCSS", "Firebase"],
-    demo: "https://jlb-typing.netlify.app/",
-    repo: "https://github.com/Jlbspyder/Speed-Test"
+    description: " A customizable content aggregator that pulls RSS and Atom feeds into one well-designed reading dashboard. It is a full-stack RSS feed reader designed to provide a clean, distraction-free way to consume content from multiple sources in one place. ",
+    stack: ["React", "Express", "Neon", "Prisma", "JWT", "TailwindCSS"],
+    demo: "https://jlb-rssfeed.netlify.app/",
+    repo: "https://github.com/Jlbspyder/RSS-FEED"
   },
 ];
 
