@@ -1,7 +1,7 @@
 const projects = [
    {
     id: 1,
-    name: "ERP App",
+    name: "ERP Application",
     image:  "/ecommerce-2.jpg",
     liveDemo: true,
     privateCode: true,
