@@ -4,7 +4,7 @@ import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { SiTypescript, SiNetlify } from "react-icons/si";
 import { FaReact, FaGitAlt, FaServer, FaCloud } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMongodb, SiNextdotjs } from "react-icons/si";
+import { SiMongodb, SiNextdotjs, SiPostgresql, SiVercel } from "react-icons/si";
 import { TbBrandReactNative, TbBrandMysql } from "react-icons/tb";
 
 const Skills = ({ dark }) => {
@@ -59,8 +59,12 @@ const Skills = ({ dark }) => {
           icon: <IoLogoFirebase />,
         },
         {
-          stack: "Mysql",
+          stack: "MySQL",
           icon: <TbBrandMysql />,
+        },
+        {
+          stack: "PostgreSQL",
+          icon: <SiPostgresql />,
         },
       ],
     },
@@ -80,9 +84,13 @@ const Skills = ({ dark }) => {
           icon: <FaCloud />,
         },
         {
-          stack: "Netlify",
-          icon: <SiNetlify />,
+          stack: "Vercel",
+          icon: <SiVercel />,
         },
+       {
+        stack: "Netlify",
+        icon: <SiNetlify />,
+      },
       ],
     },
   ];
