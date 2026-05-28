@@ -25,11 +25,11 @@ const projects = [
     id: 3,
     name: "RSS Feed Engine",
     image:  "/rss-feed.png",
-    liveDemo: false,
+    liveDemo: true,
     privateCode: false,
     description: " A modular RSS aggregation API built with Node.js and Express that fetches, parses, normalizes, caches, and serves RSS/XML feed data from multiple sources. ",
     stack: ["Node", "Express", "RSS Parser", "Jest", "Nodemon"],
-    demo: "https://jlb-rssfeed.netlify.app/",
+    demo: "https://rss-feed-engine.onrender.com/api/feeds",
     repo: "https://github.com/Jlbspyder/rss-feed-engine"
   },
    {
