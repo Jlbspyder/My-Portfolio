@@ -6,7 +6,7 @@ const projects = [
     liveDemo: true,
     privateCode: true,
     description: " A modern enterprise resource planning application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system.",
-    stack: ["React", "React Native", "TypeScript", "Mongoose", "Redux ToolKit"],
+    stack: ["React", "React Native", "TypeScript", "Express", "Node.js", "Mongoose", "Redux ToolKit"],
     demo: "https://jlb-rbac-erp.netlify.app",
     repo: "https://github.com/Jlbspyder/ERP_APP"
   },
@@ -23,14 +23,14 @@ const projects = [
   },
     {
     id: 3,
-    name: "RSS Feed Engine",
+    name: "RSS Feed Aggregator",
     image:  "/rss-feed.png",
     liveDemo: true,
     privateCode: false,
-    description: " A modular RSS aggregation API built with Node.js and Express that fetches, parses, normalizes, caches, and serves RSS/XML feed data from multiple sources. ",
-    stack: ["Node", "Express", "RSS Parser", "Jest", "Nodemon"],
-    demo: "https://rss-feed-engine.onrender.com/api/feeds",
-    repo: "https://github.com/Jlbspyder/rss-feed-engine"
+    description: " A full-stack customizable content aggregator that pulls RSS and Atom feeds into one well designed reading dashboard. It features user authentication and caching of feed data.",
+    stack: ["React", "Express", "Neon", "Prisma", "JWT", "Tailwind CSS"],
+    demo: "https://jlb-rssfeed.netlify.app",
+    repo: "https://github.com/Jlbspyder/RSS-FEED"
   },
    {
     id: 4,
