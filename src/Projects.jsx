@@ -45,7 +45,7 @@ const Projects = ({ dark }) => {
           {projects.map((project) => (
             <article
               key={project.id}
-              className={`rounded-lg skill-box border-1 shadow-sm ${
+              className={`rounded-lg border-1 shadow-sm ${
                 dark
                   ? "bg-[#121212] border-gray-800"
                   : "bg-white border-gray-200"
@@ -56,7 +56,7 @@ const Projects = ({ dark }) => {
                 alt={project.name}
                 className="project-img"
               />
-              <div className="px-6 xl:px-3 mt-3">
+              <div className="px-6  min-h-[210px] xl:px-3 mt-3">
                 <h3
                   className={`font-semibold ${
                     dark

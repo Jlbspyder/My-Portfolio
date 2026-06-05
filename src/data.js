@@ -2,10 +2,10 @@ const projects = [
    {
     id: 1,
     name: "ERP Application",
-    image:  "/ecommerce-2.jpg",
+    image:  "/erp.png",
     liveDemo: true,
     privateCode: true,
-    description: " A modern enterprise resource planning application built to manage business operations, employee workflows, approvals, and role based access control through a centralized system.",
+    description: "ERP application featuring a metric dashboard, payroll management, leave and loan workflows, audit logs, and role-based access control. Based on an internal ERP system I helped develop professionally, with proprietary functionality removed.",
     stack: ["React", "React Native", "TypeScript", "Express", "Node.js", "Mongoose", "Redux ToolKit"],
     demo: "https://jlb-rbac-erp.netlify.app",
     repo: "https://github.com/Jlbspyder/ERP_APP"
@@ -13,7 +13,7 @@ const projects = [
   {
     id: 2,
     name: "E-Commerce Platform",
-    image:  "/ecommerce.jpg",
+    image:  "/dessert-shop.png",
     liveDemo: true,
     privateCode: false,
     description: "A production grade dessert shopping web app with full cart functionalities, PayPal integration, secure authentication, and an admin CMS dashboard for managing desserts.",
@@ -34,11 +34,11 @@ const projects = [
   },
    {
     id: 4,
-    name: "Car Showcase Web App",
-    image:  "/car-copy.jpg",
+    name: "Vehicle Configurator",
+    image:  "/car-copy-2.jpg",
     liveDemo: true,
     privateCode: true,
-    description: "A responsive clone of the Kia website built to replicate a modern automotive brand experience with clean UI design, responsive layouts, and interactive user interfaces.",
+    description: "A responsive automotive platform featuring interactive vehicle customization, allowing users to explore models, modify colors and specifications, and experience a modern car configuration workflow.",
     stack: ["React", "Node.js", "Express", "MongoDB", "Redux Toolkit"],
     demo: "https://car-configurator-clone.netlify.app/",
     repo: "https://github.com/Jlbspyder/Car-Configurator"

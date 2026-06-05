@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
 import { SiTypescript, SiNetlify } from "react-icons/si";
-import { FaReact, FaGitAlt, FaServer, FaCloud, FaDocker } from "react-icons/fa";
+import { FaReact, FaGitAlt, FaServer, FaNodeJs, FaCloud, FaDocker } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb, SiNextdotjs, SiPostgresql, SiVercel } from "react-icons/si";
 import { TbBrandReactNative, TbBrandMysql } from "react-icons/tb";
@@ -62,26 +62,18 @@ const Skills = ({ dark }) => {
           stack: "MySQL",
           icon: <TbBrandMysql />,
         },
-        {
-          stack: "PostgreSQL",
-          icon: <SiPostgresql />,
-        },
       ],
     },
     {
       title: "Tools & Platforms",
       type: [
         {
+          stack: "Node.js",
+          icon: <FaNodeJs />,
+        },
+        {
           stack: "Git",
           icon: <FaGitAlt />,
-        },
-        {
-          stack: "Docker",
-          icon: <FaDocker />,
-        },
-        {
-          stack: "AWS",
-          icon: <FaCloud />,
         },
         {
           stack: "Vercel",
@@ -91,6 +83,23 @@ const Skills = ({ dark }) => {
         stack: "Netlify",
         icon: <SiNetlify />,
       },
+      ],
+    },
+    {
+      title: "Familiar With",
+      type: [
+       {
+          stack: "Docker",
+          icon: <FaDocker />,
+        },
+        {
+          stack: "AWS",
+          icon: <FaCloud />,
+        },
+        {
+          stack: "PostgreSQL",
+          icon: <SiPostgresql />,
+        },
       ],
     },
   ];
@@ -120,7 +129,7 @@ const Skills = ({ dark }) => {
           I utilize a wide range of tools and frameworks to develop robust,
           scalable solutions.
         </p>
-        <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-5 gap-4">
           {skillColumns.map((column) => (
             <div
               key={column.title}
