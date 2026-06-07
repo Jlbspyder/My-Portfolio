@@ -5,7 +5,7 @@ const projects = [
     image:  "/erp.png",
     liveDemo: true,
     privateCode: true,
-    description: "ERP application featuring a metric dashboard, payroll management, leave and loan workflows, audit logs, and role-based access control. Based on an internal ERP system I helped develop professionally, with proprietary functionality removed.",
+    description: "ERP application featuring a metric dashboard, payroll management, leave and loan workflows, audit logs, and role-based access control. Based on an internal ERP system I developed professionally, with proprietary functionality removed.",
     stack: ["React", "React Native", "TypeScript", "Express", "Node.js", "Mongoose", "Redux ToolKit"],
     demo: "https://jlb-rbac-erp.netlify.app",
     repo: "https://github.com/Jlbspyder/ERP_APP"
