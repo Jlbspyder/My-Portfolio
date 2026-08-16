@@ -1,10 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
-import { SiTypescript, SiNetlify } from "react-icons/si";
-import { FaReact, FaGitAlt, FaServer, FaNodeJs, FaCloud, FaDocker } from "react-icons/fa";
+import {
+  FaReact,
+  FaGitAlt,
+  FaServer,
+  FaNodeJs,
+  FaCloud,
+  FaDocker,
+} from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMongodb, SiNextdotjs, SiPostgresql, SiVercel } from "react-icons/si";
+import {
+  SiMongodb,
+  SiNextdotjs,
+  SiPostgresql,
+  SiTypescript,
+  SiVercel,
+  SiJest,
+  SiCypress,
+  SiNetlify,
+  SiFigma
+} from "react-icons/si";
 import { TbBrandReactNative, TbBrandMysql } from "react-icons/tb";
 
 const Skills = ({ dark }) => {
@@ -62,6 +78,10 @@ const Skills = ({ dark }) => {
           stack: "MySQL",
           icon: <TbBrandMysql />,
         },
+        {
+          stack: "PostgreSQL",
+          icon: <SiPostgresql />,
+        },
       ],
     },
     {
@@ -76,29 +96,37 @@ const Skills = ({ dark }) => {
           icon: <FaGitAlt />,
         },
         {
+          stack: "Jest",
+          icon: <SiJest />,
+        },
+        {
+          stack: "Cypress",
+          icon: <SiCypress />,
+        },
+        {
+          stack: "Figma",
+          icon: <SiFigma />,
+        },
+        {
           stack: "Vercel",
           icon: <SiVercel />,
         },
-       {
-        stack: "Netlify",
-        icon: <SiNetlify />,
-      },
+        {
+          stack: "Netlify",
+          icon: <SiNetlify />,
+        },
       ],
     },
     {
       title: "Familiar With",
       type: [
-       {
+        {
           stack: "Docker",
           icon: <FaDocker />,
         },
         {
           stack: "AWS",
           icon: <FaCloud />,
-        },
-        {
-          stack: "PostgreSQL",
-          icon: <SiPostgresql />,
         },
       ],
     },
