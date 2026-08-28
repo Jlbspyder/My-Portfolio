@@ -167,7 +167,7 @@ const Skills = ({ dark }) => {
           I utilize a wide range of tools and frameworks to develop robust,
           scalable solutions.
         </p>
-        <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="mt-6 grid sm:grid-cols-4 md:grid-cols-5 gap-4">
           {skillColumns.map((column) => (
             <div
               key={column.title}
