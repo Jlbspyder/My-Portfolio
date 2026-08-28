@@ -8,6 +8,7 @@ import {
   FaNodeJs,
   FaCloud,
   FaDocker,
+  FaPython
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
@@ -19,7 +20,8 @@ import {
   SiJest,
   SiCypress,
   SiNetlify,
-  SiFigma
+  SiFigma,
+  SiSupabase
 } from "react-icons/si";
 import { TbBrandReactNative, TbBrandMysql } from "react-icons/tb";
 
@@ -75,6 +77,10 @@ const Skills = ({ dark }) => {
           icon: <IoLogoFirebase />,
         },
         {
+          stack: "Supabase",
+          icon: <SiSupabase />,
+        },
+        {
           stack: "MySQL",
           icon: <TbBrandMysql />,
         },
@@ -120,6 +126,10 @@ const Skills = ({ dark }) => {
     {
       title: "Familiar With",
       type: [
+        {
+          stack: "Python",
+          icon: <FaPython />,
+        },
         {
           stack: "Docker",
           icon: <FaDocker />,

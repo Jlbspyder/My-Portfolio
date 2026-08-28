@@ -38,13 +38,12 @@ const About = ({ dark }) => {
                 dark ? "text-white" : "text-slate-700"
               }`}
             >
-              I am a dedicated Software Engineer with experience developing,
-              and maintaining scalable software solutions. I specialize in building clean,
-              efficient, and user focused applications while solving complex engineering
-              problems through practical and maintainable solutions. My technical stack
-              includes React, Node.js, databases, and cloud deployment technologies,
-              enabling me to deliver modern fullstack applications with strong
-              performance and usability.
+              I'm a Software Engineer building scalable, user-focused software applications
+              with React, Node.js, databases, and cloud technologies. I enjoy
+              turning complex problems into clean, maintainable solutions, with
+              a strong focus on performance and practical
+              engineering. I work across the stack to ship reliable products
+              that are easy to use and built to scale.
             </p>
             <div
               className={`flex items-center gap-4 mt-4 ${
@@ -101,10 +100,10 @@ const About = ({ dark }) => {
                 <h5 className="font-bold text-green-500">Clean Code</h5>
               </div>
               <p className="md:text-[15px]">
-                Developing clean, scalable, and maintainable software by applying
-                engineering best practices, including DRY principles, clear code
-                structure, version control, and Atomic Design for reusable
-                component architecture.
+                Developing clean, scalable, and maintainable software by
+                applying engineering best practices, including DRY principles,
+                clear code structure, version control, and Atomic Design for
+                reusable component architecture.
               </p>
             </div>
             <div
@@ -152,9 +151,9 @@ const About = ({ dark }) => {
                 <h5 className="font-bold text-amber-500">Data structures</h5>
               </div>
               <p className="md:text-[15px]">
-                Strong understanding of algorithms and data structures,
-                with the ability to apply them effectively to problem solving
-                and software development.
+                Strong understanding of algorithms and data structures, with the
+                ability to apply them effectively to problem solving and
+                software development.
               </p>
             </div>
           </motion.div>
