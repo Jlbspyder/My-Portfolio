@@ -21,7 +21,8 @@ import {
   SiCypress,
   SiNetlify,
   SiFigma,
-  SiSupabase
+  SiSupabase,
+  SiFlask
 } from "react-icons/si";
 import { TbBrandReactNative, TbBrandMysql } from "react-icons/tb";
 
@@ -37,6 +38,10 @@ const Skills = ({ dark }) => {
         {
           stack: "TypeScript",
           icon: <SiTypescript />,
+        },
+        {
+          stack: "Python",
+          icon: <FaPython />,
         },
       ],
     },
@@ -62,6 +67,10 @@ const Skills = ({ dark }) => {
         {
           stack: "TailwindCSS",
           icon: <RiTailwindCssFill />,
+        },
+        {
+          stack: "Flask",
+          icon: <SiFlask />,
         },
       ],
     },
@@ -126,10 +135,6 @@ const Skills = ({ dark }) => {
     {
       title: "Familiar With",
       type: [
-        {
-          stack: "Python",
-          icon: <FaPython />,
-        },
         {
           stack: "Docker",
           icon: <FaDocker />,
