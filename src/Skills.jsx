@@ -22,7 +22,7 @@ import {
   SiNetlify,
   SiFigma,
   SiSupabase,
-  SiFlask
+  SiFastapi,
 } from "react-icons/si";
 import { TbBrandReactNative, TbBrandMysql } from "react-icons/tb";
 
@@ -69,8 +69,8 @@ const Skills = ({ dark }) => {
           icon: <RiTailwindCssFill />,
         },
         {
-          stack: "Flask",
-          icon: <SiFlask />,
+          stack: "FastAPI",
+          icon: <SiFastapi />,
         },
       ],
     },
