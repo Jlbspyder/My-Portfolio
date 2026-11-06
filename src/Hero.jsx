@@ -36,9 +36,8 @@ const Hero = ({ dark }) => {
             dark ? "text-white" : "text-slate-600"
           }`}
         >
-          Software Engineer focused on building scalable, user centered applications.
-          I work across the stack, shipping high quality, maintainable software with
-          clean architecture and practical engineering solutions.
+         Software Engineer who prefers simple solutions to clever ones.
+         I turn complicated, data heavy workflows into software people can actually use.
         </p>
 
         <div className="mt-8 flex justify-center gap-4">

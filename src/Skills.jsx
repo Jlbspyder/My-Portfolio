@@ -8,7 +8,8 @@ import {
   FaNodeJs,
   FaCloud,
   FaDocker,
-  FaPython
+  FaPython,
+  FaAws
 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import {
@@ -23,6 +24,7 @@ import {
   SiFigma,
   SiSupabase,
   SiFastapi,
+  SiPrisma
 } from "react-icons/si";
 import { TbBrandReactNative, TbBrandMysql } from "react-icons/tb";
 
@@ -65,12 +67,16 @@ const Skills = ({ dark }) => {
           icon: <FaServer />,
         },
         {
-          stack: "TailwindCSS",
-          icon: <RiTailwindCssFill />,
+          stack: "Prisma",
+          icon: <SiPrisma />,
         },
         {
           stack: "FastAPI",
           icon: <SiFastapi />,
+        },
+        {
+          stack: "TailwindCSS",
+          icon: <RiTailwindCssFill />,
         },
       ],
     },
@@ -119,6 +125,10 @@ const Skills = ({ dark }) => {
           icon: <SiCypress />,
         },
         {
+          stack: "AWS",
+          icon: <FaAws />,
+        },
+        {
           stack: "Figma",
           icon: <SiFigma />,
         },
@@ -138,10 +148,6 @@ const Skills = ({ dark }) => {
         {
           stack: "Docker",
           icon: <FaDocker />,
-        },
-        {
-          stack: "AWS",
-          icon: <FaCloud />,
         },
       ],
     },

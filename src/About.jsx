@@ -38,12 +38,13 @@ const About = ({ dark }) => {
                 dark ? "text-white" : "text-slate-700"
               }`}
             >
-              I'm a Software Engineer building scalable, user-focused software applications
-              with React, Node.js, databases, and cloud technologies. I enjoy
-              turning complex problems into clean, maintainable solutions, with
-              a strong focus on performance and practical
-              engineering. I work across the stack to ship reliable products
-              that are easy to use and built to scale.
+              I’m a software engineer building React, TypeScript,
+              Node.js and Python products for complex, data heavy teams. For the
+              past six years I’ve led the development of an HR and ERP platform
+              used by 200+ employees, from payroll and approvals to reporting
+              tables that render in under a second. I ship high quality,
+              maintainable software with clean architecture and practical
+              engineering solutions.
             </p>
             <div
               className={`flex items-center gap-4 mt-4 ${
